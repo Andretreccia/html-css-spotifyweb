@@ -61,6 +61,9 @@ a{
 .list_none{
     list-style-type: none;
 }
+.list_inline li{
+    display: inline;
+}
         /* utility background */
 
         /* utility color */
@@ -167,4 +170,23 @@ a{
     img.running{
         height: 50px;
     }
-    .
+.buttons ul{
+    text-align: center;
+}
+.buttons .fas{
+    font-size: 30px;
+}
+.buttons .far{
+    font-size: 40px;
+}
+.buttons li{
+    margin: 15px;
+    cursor: pointer;
+}
+.timeline{
+    width: 500px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #A3A3A3;
+    margin: 0 20px;
+}
