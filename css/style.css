@@ -6,6 +6,7 @@
 }
 body{
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 .clearfix{
     content: "";
@@ -42,8 +43,6 @@ body{
 }
 .debug .profile{
     background-color: cadetblue;
-    
-    height: 80px;
 }
 /* /debug.*/
 
@@ -54,6 +53,19 @@ body{
 .flex{
     display: flex;
 }
+.list_none{
+    list-style-type: none;
+}
+        /* utility background */
+
+        /* utility color */
+.gry{
+    color: #A3A3A3;
+}
+.wht{
+    color: white;
+}
+
 /* /utility */
 
 
@@ -78,23 +90,50 @@ body{
      height: 100%;
      flex-direction: column;
      justify-content: space-between;
+     padding:15px 15px 5px 15px;
 }
 .user_content{
     width: 100%;
 }
     .logo img{
         height: 50px;
-        margin: 15px;
+        
+    }
+    .nav{
+        margin: 25px 0;
     }
 
+
+.playlist{
+   min-height: 500px;
+}
+    .list_playlist{
+        overflow: auto;
+        height: 50%;
+    }
 .profile{
     width: 100%;
 }
-.playlist{
-    overflow: auto;
-    height: 50%;
+    .profile div{
+        margin: 8px 0;
+    }   
+    .go.to_profile a{
+        font-size: 20px;
+    }
+.side_column a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
 }
-
+.side_column li, .side_column h3{
+    margin: 10px 0;
+}
+.side_column .special{
+    font-size: 20px;
+}
+.big{
+    font-size: 50px;
+}
 /* Parte centrale della musica */
 
 .music_content{
