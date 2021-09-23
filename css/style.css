@@ -1,17 +1,23 @@
 /* common rules */
-*{box-sizing: border-box;
+*{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
     height: 100vh;
 }
-/* /common ruled */
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* /common rules */
 
 /* debug */
 .debug #control_bar{
     background-color: lightsalmon;
-    height: 80px;
+    height: 100px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -19,7 +25,27 @@ body{
 .debug #content{
     background-color: lightsteelblue;
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
 }
-
+.debug .sidebar{
+    width: 240px;
+     height: 100%;
+     background-color: lightgreen;
+}
+.debug .music_content{
+    width: calc(100% - 240px);
+    height: 100%;
+    background-color: lightpink;
+}
+.debug .action_container{
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+}
 /* /debug.*/
+
+/* utility */
+.f_left{
+    float: left;
+}
+/* /utility */
