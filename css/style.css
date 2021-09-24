@@ -89,6 +89,9 @@ a{
 .circle{
     border-radius: 50%;
 }
+.resp_none{
+        display:contents;
+    }
 /* /utility */
 
 
@@ -271,3 +274,16 @@ a{
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width:768px) {
+    .row .col{
+        width: calc(100% / 2)
+    }
+}
+@media screen and (max-width:700px) {
+    aside.side_column{
+        width: 80px;
+    }
+}
+    /* .resp_none{
+        display: none;
+    } */
