@@ -15,9 +15,9 @@
         <title>Document</title>
     </head>
     <body class="debug">
-        <div id="content">
+        <main id="site_main">
             <!-- Parte laterale sinistra -->
-            <div class="side_column f_left flex">
+            <aside class="side_column f_left flex">
                 <div class="user_content">
                     <div class="logo">
                         <img src="./img/logo.svg" alt="">
@@ -145,15 +145,15 @@
                                                 John Doe</a>
                                         </div>
                                     </div>
-            </div>
-            <main class="music_content f_left">
+            </aside>
+            <div class="music_content f_left">
                 <div class="action_container">
 
                 </div>
-            </main>
-        </div>
+            </div>
+        </main>
         <!-- barra di controllo in basso -->
-            <div id="control_bar" class="flex">
+            <footer id="control_bar" class="flex">
                     <!-- elemento di sinistra -->
                     <div class="detail flex">
                         <div class="album">
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                     <!-- elemento centrale -->
-                    <div class="control">
+                    <div class="control flex">
                         <div class="buttons">
                             <ul class="list_none list_inline">
                                 <li><i class="fas fa-random wht"></i></li>
@@ -194,8 +194,16 @@
                         </div>
                     </div>
                     <!-- elemento di destra -->
-                    <div class="audio">asdf</div>
-            </div>
+                    <div class="audio">
+                        <div class="intercace">
+                            <span class="wht"><i class="fas fa-bars"></i></span>
+                            <span class="wht"><i class="fas fa-desktop"></i> </span>
+                        </div>
+                        <div class="volune">
+                                <span class="vol_icon wht"></span> <span class="vol_bar"></span>
+                        </div>
+                    </div>
+            </footer>
 
      </body>
 </html>
