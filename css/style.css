@@ -89,8 +89,8 @@ a{
 .circle{
     border-radius: 50%;
 }
-.resp_none{
-        display:contents;
+.resp_si{
+        display: none;
     }
 /* /utility */
 
@@ -278,12 +278,27 @@ a{
     .row .col{
         width: calc(100% / 2)
     }
-}
-@media screen and (max-width:700px) {
-    aside.side_column{
-        width: 80px;
+    .user_content .logo.resp_none{
+        display: initial;
     }
 }
-    /* .resp_none{
+@media screen and (max-width:700px) {
+    
+    .side_column{
+        width: 70px;
+    }
+    .music_content{
+    width: calc(100% - 80px)
+    
+}
+    .resp_no{
         display: none;
-    } */
+    }
+    .resp_si{
+        display: block;
+        width: 40px;
+    }
+    .side_column li{
+        text-align: center;
+    }
+}
