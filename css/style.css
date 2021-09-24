@@ -35,7 +35,7 @@ a{
 }
 .debug .music_content{
     
-    background-color: lightpink;
+    background-color: #141922
 }
 .debug .action_container{
     
@@ -65,6 +65,15 @@ a{
 .list_inline li{
     display: inline;
 }
+.sub{
+    font-size: 12px;
+    
+    font-weight: bold;
+}
+
+.cntr{
+    text-align: center;
+}
         /* utility background */
 
         /* utility color */
@@ -77,7 +86,9 @@ a{
 .strong{
     font-weight: bold;
 }
-
+.circle{
+    border-radius: 50%;
+}
 /* /utility */
 
 
@@ -146,17 +157,9 @@ a{
 .big{
     font-size: 50px;
 }
-/* Parte centrale della musica */
 
-.music_content{
-    width: calc(100% - 240px);
-    height: 100%;
-    
-}
-.action_container{
-    height: 90px;
-    width: 100%;
-}
+
+
 /* barra di controllo in basso  */
 #control_bar{
     justify-content: space-between;
@@ -216,13 +219,33 @@ a{
         margin: 5px;
     }
     /* parte centrale della musica */
+.music_content{
+    width: calc(100% - 240px);
+    height: 100%;
+    
+}
+.action_container{
+    height: 90px;
+    width: 100%;
+}
+
+.container{
+        
+        height: calc(100% - 100px);
+        overflow:auto;
+        
+    }
     .music_nav ul{
         text-align: center;
         padding: 5px;
+        margin: 24px;
     }
-    .music_nav li{
-        margin: 15px;
-        font-size: 14px;
+        .music_nav li{
+            margin: 8px;
+            font-size: 12px;
+        }
+    .row{
+        margin: 10px;
     }
     .col{
         width: calc(100% / 6);
@@ -232,9 +255,7 @@ a{
     .container img{
         width: 100%;
     }
-    .container{
-        
-        height: calc(100% - 100px);
-        overflow:auto;
-        
+    .container h3, 
+    .container h5{
+        margin: 10px;
     }
