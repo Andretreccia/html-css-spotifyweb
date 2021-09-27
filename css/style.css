@@ -18,6 +18,9 @@ body{
 a{
     text-decoration: none;
 }
+body a:hover{
+            color: white;
+                }
 /* /common rules */
 
 /* debug */
@@ -116,11 +119,14 @@ a{
     align-items: center;
 }
 .action_button{
+    margin-right: 20px;
     border: 1px solid white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 50px;
-    font-size: 14px;
-
+    font-size: 12px;
+}
+.action_button:hover{
+    transform: scale(1.1);
 }
 
 /* Sezione laterale sinistra */
@@ -183,6 +189,7 @@ a{
 }
 .detail{
     align-items: center;
+    
 }
     .album{
         padding: 25px 10px;
@@ -190,8 +197,11 @@ a{
     img.running{
         height: 50px;
     }
+.u_line:hover{
+    text-decoration: underline;
+}
 .interactions li{
-    margin: 5px;
+    margin: 5px 10px;
 }
 .control{
     flex-direction: column;
@@ -236,6 +246,14 @@ a{
         height: 5px;
         margin: 5px;
     }
+.control i:hover,
+.audio i:hover{
+    transform: scale(1.1);
+}
+.detail i:hover{
+    color: white;
+    cursor: pointer;
+}
     /* parte centrale della musica */
 .music_content{
     width: calc(100% - 240px);
@@ -262,6 +280,7 @@ a{
             margin: 8px;
             font-size: 12px;
         }
+        
     .row{
         margin: 10px;
     }
@@ -355,7 +374,7 @@ a{
         font-size: 10px;
     }
     .interactions li{
-        display: list-item;
+        
         margin: 3px;
         font-size: 12px;
     }
