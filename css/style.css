@@ -92,6 +92,9 @@ a{
 .resp_si{
         display: none;
     }
+.hidden{
+    visibility: hidden;
+}
 /* /utility */
 
 
@@ -246,7 +249,7 @@ a{
 
 .container{
         
-        height: calc(100% - 100px);
+        height: calc(100% - 190px);
         overflow:auto;
         
     }
@@ -266,13 +269,37 @@ a{
         width: calc(100% / 6);
         padding: 5px;
         
+        
     }
     .container img{
         width: 100%;
     }
     .container h3, 
     .container h5{
-        margin: 10px;
+        margin: 10px 0px;
+    }
+    .cont_img{
+        position: relative;
+    }
+    .play1{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 70%;
+    }
+    .play1 i{
+        z-index: 5;
+        cursor: pointer;
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .cont_img:hover .hidden {
+        visibility: visible;
     }
 /* ****************************************************************************************
 *********************** R E S P O N S I V E ********************************************
