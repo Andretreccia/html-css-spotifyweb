@@ -107,7 +107,18 @@ a{
     width: 100%;
     height: calc(100vh - 100px);
 }
+/* Action section */
+.action_container{
+    justify-content: end;
+    align-items: center;
+}
+.action_button{
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 14px;
 
+}
 
 /* Sezione laterale sinistra */
 
@@ -182,23 +193,24 @@ a{
 .control{
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
 }
 
     .buttons ul{
         text-align: center;
     }
     .buttons .fas{
-        font-size: 20px;
+        font-size: 18px;
     }
     .buttons .far{
-        font-size: 30px;
+        font-size: 28px;
     }
     .buttons li{
-        margin: 15px;
+        margin: 10px;
         cursor: pointer;
     }
     .timeline{
-        width: 500px;
+        width: 100%;
         height: 5px;
         border-radius: 5px;
         background-color: #A3A3A3;
@@ -216,7 +228,7 @@ a{
         margin: 5px;
     }
     .vol_bar{
-        width: 80px;
+        width: 60px;
         background-color: #A3A3A3;
         height: 5px;
         margin: 5px;
@@ -281,8 +293,13 @@ a{
     .user_content .logo.resp_none{
         display: initial;
     }
+    .buttons li{
+        margin: 10px;
+        
+    }
+    
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:480px) {
     
     .side_column{
         width: 70px;
@@ -300,5 +317,32 @@ a{
     }
     .side_column li{
         text-align: center;
+    }
+.album{
+        padding: 25px 10px;
+    }
+    img.running{
+        height: 30px;
+    }
+   #control_bar .metadati{
+        font-size: 10px;
+    }
+    .interactions li{
+        display: list-item;
+        margin: 3px;
+        font-size: 12px;
+    }
+.buttons .far{
+        font-size: 20px;
+    }
+    .buttons .fas{
+        font-size: 15px;
+    }
+    .trace_bar .past,
+    .trace_bar .remaining{
+        font-size: 10px;
+    }
+    .audio li{
+        font-size: 10px;
     }
 }
