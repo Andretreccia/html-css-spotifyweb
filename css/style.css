@@ -24,35 +24,7 @@ body a:hover{
 /* /common rules */
 
 /* debug */
-.debug #control_bar{
-    background-color: rgb(40, 40, 40);
-    
-}
-.debug #site_main{
-    background-color: lightsteelblue;
-    
-}
-.debug .side_column{ 
-     background-color: rgb(0, 0, 0);
-     
-}
-.debug .music_content{
-    
-    background-color: #141922
-}
-.debug .action_container{
-    
-    background-color: rgba(0, 0, 0, 0.445);
-}
-.debug .user_content{
-    
-    /* min-height: 60%; */
-    /* background-color: cadetblue;
-    border: 1px solid black; */
-}
-/* .debug .profile{
-    background-color: cadetblue;
-} */
+
 /* /debug.*/
 
 /* utility */
@@ -108,6 +80,7 @@ body a:hover{
     width: 100%;
     position: absolute;
     bottom: 0;
+     background-color: rgb(40, 40, 40);
 }
 #site_main{
     width: 100%;
@@ -137,6 +110,7 @@ body a:hover{
      flex-direction: column;
      justify-content: space-between;
      padding:15px 15px 5px 15px;
+     background-color: rgb(0, 0, 0);
      
 }
 .user_content{
@@ -144,10 +118,14 @@ body a:hover{
     height: 100%;
     overflow-y: hidden;
 }
+.user_content span{
+        vertical-align: 8px;
+    }
     .logo img{
         height: 50px;
         
     }
+    
     .nav_side{
         margin: 25px 0;
     }
@@ -293,11 +271,13 @@ body a:hover{
 .music_content{
     width: calc(100% - 240px);
     height: 100%;
+    background-color: #141922
     
 }
 .action_container{
     height: 90px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
 }
 
 .container{
@@ -322,15 +302,18 @@ body a:hover{
     .col{
         width: calc(100% / 6);
         padding: 5px;
-        
-        
+             
+    }
+    .col>h3,
+    .col>p{
+        margin-left: 10px;
     }
     .container img{
         width: 100%;
     }
     .container h3, 
-    .container h5{
-        margin: 10px 0px;
+    .container p{
+        margin: 10px 10px;
     }
     .cont_img{
         position: relative;
